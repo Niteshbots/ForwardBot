@@ -7,9 +7,9 @@ TOKEN=os.environ.get('BOT_TOKEN',None)
 
 updater=Updater(TOKEN,use_context=True)
 
-START_TEXT=os.environ.get('Start_Msg')
+START_TEXT = """Hlw I am Forwarded Tag Remover just Forward me Anything"""
 
-HELP_TEXT=os.environ.get('Help_Msg')
+HELP_TEXT = """Just Forward Your Message Here and See the Magic 😂"""
 
 def start_text(u,c):
 	u.message.reply_text(START_TEXT)
