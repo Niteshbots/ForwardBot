@@ -3,13 +3,13 @@ import os
 
 
 
-TOKEN=os.eveniron.get('BOT_TOKEN',None)
+TOKEN=os.environ.get('BOT_TOKEN',None)
 
 updater=Updater(TOKEN,use_context=True)
 
-START_TEXT=os.eveniron.get('Start_Msg',None)
+START_TEXT=os.environ.get('Start_Msg',None)
 
-HELP_TEXT=os.eveniron.get('Help_Msg',None)
+HELP_TEXT=os.environ.get('Help_Msg',None)
 
 def start_text(u,c):
 	u.message.reply_text(START_TEXT)
